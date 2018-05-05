@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@font-face {
+    font-family: 'jf_flatregular';
+    src: url('../fonts/jf-flat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/jf-flat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import "layout.css";
+@import "normalize.css";
+
+@import "./componants/_main.scss";
+
+body {
+	background: #fff url('../img/background.jpg') 100% 100% no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// font-family: 'Lato', sans-serif;
+	font-family: 'jf_flatregular', sans-serif;
+}
+*, h1, h2, h3, h4, p {
+	margin: 0;
+}
+button {
+	border: none;
+	outline: none;
+	transition: opacity .5s;
+	z-index: 99;
+	&:hover{
+		opacity: .5;
+		transition: opacity .5s;
+	}
+}
